@@ -33,6 +33,7 @@ body {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.05);
   }
@@ -42,27 +43,21 @@ html {
   scroll-behavior: smooth;
 }
 
-.hover:scale-105:hover {
-  animation: scaleUp 0.3s ease-in-out forwards;
-}
-
 @keyframes scaleUp {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.05);
   }
-}
-
-.hover:scale-105:hover {
-  animation: scaleUp 0.3s ease-in-out forwards;
 }
 
 @keyframes spin-slow {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -84,8 +79,9 @@ html {
 
 @keyframes shine {
   0% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff0000, 0 0 20px #ff0000;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #f00, 0 0 20px #f00;
   }
+
   100% {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff7300, 0 0 20px #ff7300;
   }
