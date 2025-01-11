@@ -12,44 +12,51 @@ const projects = [
     name: 'Phone Validator',
     description: 'A responsive phone validator showcasing my work and skills.',
     image: '/images/phone-validator.png',
-    technologies: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
+    technologies: ['html', 'css', 'js'], // Use string identifiers for tech
   },
   {
     id: 2,
     name: 'Skin Care Website',
     description: 'A skin care website showcasing my work and skills.',
     image: '/images/skin-care.png',
-    technologies: [<FaHtml5 />, <FaCss3Alt />],
+    technologies: ['html', 'css'],
   },
   {
     id: 3,
     name: 'Pokemon',
     description: 'A website named Pokemon showcasing all Pokemon characters.',
     image: '/images/pokemn.png',
-    technologies: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
+    technologies: ['html', 'css', 'js'],
   },
   {
     id: 4,
     name: 'Travels Space',
     description: 'A project using React JS for a travels space app.',
     image: '/images/travels.png.png',
-    technologies: [<FaReact />, <FaJs />],
+    technologies: ['react', 'js'],
   },
   {
     id: 5,
     name: 'Cash Register',
     description: 'A cash register app helping to return change to customers.',
     image: '/images/C1.png',
-    technologies: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
+    technologies: ['html', 'css', 'js'],
   },
   {
     id: 6,
     name: 'Next.js Advanced App',
     description: 'A Next.js app showcasing advanced skills and practices.',
     image: '/images/nextjs.png.png',
-    technologies: [<FaReact />, <FaJs />],
+    technologies: ['react', 'js'],
   },
 ];
+
+const technologyIcons = {
+  html: <FaHtml5 />,
+  css: <FaCss3Alt />,
+  js: <FaJs />,
+  react: <FaReact />,
+};
 
 const Projects = () => (
   <section id="projects" className="py-20 bg-gray-900 text-white">
@@ -71,13 +78,13 @@ const Projects = () => (
               <p className="text-sm mb-4">{project.description}</p>
               <div className="flex space-x-2">
                 {/* Using technology icons */}
-                {project.technologies.map((icon, index) => (
+                {project.technologies.map((tech) => (
                   <span
-                    key={`${project.id}-${index}`} // Unique key for each technology icon
+                    key={tech} // Directly using tech as key
                     className="text-lg text-yellow-500"
                     title="Technology used"
                   >
-                    {icon}
+                    {technologyIcons[tech]}
                   </span>
                 ))}
               </div>
