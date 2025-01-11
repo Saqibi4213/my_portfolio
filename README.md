@@ -40,7 +40,7 @@ To set up this portfolio project locally, follow the steps below:
 ## Demo🌐 
 You can view the live demo of the project here:
 <a name="live-demo"></a>
-- <a href="https://dev--earnest-wisp-77ac4d.netlify.app/" target="_blank">Live Demo</a>
+- <a href="https://gilded-eclair-bb9b22.netlify.app/" target="_blank">Live Demo</a>
 
 ## Author🧑‍💻
 <a name="authors"></a>
