@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
 
   useEffect(() => {
-    const savedData = JSON.parse(localStorage.getItem("contactFormData"));
+    const savedData = JSON.parse(localStorage.getItem('contactFormData'));
     if (savedData) {
       setName(savedData.name);
       setEmail(savedData.email);
@@ -24,7 +24,7 @@ const Contact = () => {
       phone,
       message,
     };
-    localStorage.setItem("contactFormData", JSON.stringify(formData));
+    localStorage.setItem('contactFormData', JSON.stringify(formData));
   };
 
   const handleSubmit = (e) => {

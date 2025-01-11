@@ -1,47 +1,47 @@
-import React from "react";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
+import React from 'react';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact } from 'react-icons/fa';
 
 const projects = [
   {
     id: 1,
-    name: "Phone Validator",
-    description: "A responsive phone validator showcasing my work and skills.",
-    image: "/images/phone-validator.png",
+    name: 'Phone Validator',
+    description: 'A responsive phone validator showcasing my work and skills.',
+    image: '/images/phone-validator.png',
     technologies: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
   },
   {
     id: 2,
-    name: "Skin Care Website",
-    description: "A skin care website showcasing my work and skills.",
-    image: "/images/skin-care.png",
+    name: 'Skin Care Website',
+    description: 'A skin care website showcasing my work and skills.',
+    image: '/images/skin-care.png',
     technologies: [<FaHtml5 />, <FaCss3Alt />],
   },
   {
     id: 3,
-    name: "Pokemon",
-    description: "A website named Pokemon showcasing all Pokemon characters.",
-    image: "/images/pokemn.png",
+    name: 'Pokemon',
+    description: 'A website named Pokemon showcasing all Pokemon characters.',
+    image: '/images/pokemn.png',
     technologies: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
   },
   {
     id: 4,
-    name: "Travels Space",
-    description: "A project using React JS for a travels space app.",
-    image: "/images/travels.png",
+    name: 'Travels Space',
+    description: 'A project using React JS for a travels space app.',
+    image: '/images/travels.png',
     technologies: [<FaReact />, <FaJs />],
   },
   {
     id: 5,
-    name: "Cash Register",
-    description: "A cash register app helping to return change to customers.",
-    image: "/images/C1.png",
+    name: 'Cash Register',
+    description: 'A cash register app helping to return change to customers.',
+    image: '/images/C1.png',
     technologies: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
   },
   {
     id: 6,
-    name: "Next.js Advanced App",
-    description: "A Next.js app showcasing advanced skills and practices.",
-    image: "/images/nextjs.png",
+    name: 'Next.js Advanced App',
+    description: 'A Next.js app showcasing advanced skills and practices.',
+    image: '/images/nextjs.png',
     technologies: [<FaHtml5 />, <FaCss3Alt />],
   },
 ];
@@ -65,9 +65,9 @@ const Projects = () => (
               <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
               <p className="text-sm mb-4">{project.description}</p>
               <div className="flex space-x-2">
-                {project.technologies.map((icon, idx) => (
+                {project.technologies.map((icon) => (
                   <span
-                    key={`${project.id}-${idx}`}
+                    key={`${project.id}-${icon.type.displayName}`}
                     className="text-lg text-yellow-500"
                     title="Technology used"
                   >

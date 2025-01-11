@@ -126,7 +126,7 @@ const Skills = () => (
           <div
             key={skill.name}
             className={`flex flex-col items-center justify-center ${skill.bg} text-white p-6 rounded-lg shadow-xl hover:shadow-2xl transform transition-all duration-300 ease-in-out hover:scale-105 hover:bg-gradient-to-r ${`hover:from-${skill.bg.slice(
-              3
+              3,
             )}`} hover:to-blue-500`}
           >
             {/* Icon */}

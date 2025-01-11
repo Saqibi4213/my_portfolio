@@ -1,5 +1,5 @@
-import React from "react";
-import { FaEnvelope } from "react-icons/fa";
+import React from 'react';
+import { FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => (
   <footer className="bg-black text-gray-400 py-6 text-center md:text-left">

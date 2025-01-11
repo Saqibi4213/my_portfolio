@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
-import { AiOutlineDownload } from "react-icons/ai";
+import React, { useEffect } from 'react';
+import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { AiOutlineDownload } from 'react-icons/ai';
 
 const Home = () => {
   useEffect(() => {
-    const pointerCircle = document.createElement("div");
-    pointerCircle.classList.add("pointer-circle");
+    const pointerCircle = document.createElement('div');
+    pointerCircle.classList.add('pointer-circle');
     document.body.appendChild(pointerCircle);
 
     const handleMouseMove = (e) => {
@@ -16,10 +16,10 @@ const Home = () => {
       pointerCircle.style.top = `${y - pointerCircle.offsetHeight / 2}px`;
     };
 
-    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener('mousemove', handleMouseMove);
 
     return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener('mousemove', handleMouseMove);
       document.body.removeChild(pointerCircle);
     };
   }, []);
@@ -32,7 +32,8 @@ const Home = () => {
           I am Mehria Saqibi
         </h1>
         <p className="text-lg md:text-xl">
-          A passionate junior web developer with a computer science degree. I thrive on turning complex problems into elegant web solutions.
+          A passionate junior web developer with a computer science degree.
+          I thrive on turning complex problems into elegant web solutions.
         </p>
 
         {/* Social Media Icons */}
@@ -66,7 +67,7 @@ const Home = () => {
           download
           className="inline-flex items-center px-8 py-4 mt-6 bg-gradient-to-r from-yellow-500 to-red-500 text-black font-bold text-xl rounded-full shadow-lg hover:shadow-yellow-500/50 hover:scale-110 transition-all duration-300 transform relative"
         >
-          <span className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-red-600 rounded-full blur-sm opacity-30"></span>
+          <span className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-red-600 rounded-full blur-sm opacity-30" />
           <AiOutlineDownload className="mr-3 text-2xl" />
           Download CV
         </a>
