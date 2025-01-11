@@ -1,26 +1,25 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const certificatesData = [
   {
-    topic: "Responsive Design",
-    description:
-      "Fundamentals of web development, focusing on structure and design.",
-    image: "/images/responsive.jpg",
+    topic: 'Responsive Design',
+    description: 'Fundamentals of web development, focusing on structure and design.',
+    image: '/images/responsive.jpg',
   },
   {
-    topic: "JavaScript and algorithms",
-    description: "Mastery of JavaScript for interactive web functionality.",
-    image: "/images/js.jpg",
+    topic: 'JavaScript and algorithms',
+    description: 'Mastery of JavaScript for interactive web functionality.',
+    image: '/images/js.jpg',
   },
   {
-    topic: "Fronetend Libraries",
-    description: "Deep dive into problem-solving and efficient data handling.",
-    image: "/images/frontend.jpg",
+    topic: 'Frontend Libraries',
+    description: 'Deep dive into problem-solving and efficient data handling.',
+    image: '/images/frontend.jpg',
   },
   {
-    topic: "Email writing",
-    description: "email writing skills",
-    image: "/images/email.jpg",
+    topic: 'Email writing',
+    description: 'Email writing skills',
+    image: '/images/email.jpg',
   },
 ];
 
@@ -28,15 +27,15 @@ const Certificates = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
+    setCurrentIndex((prevIndex) => (
       prevIndex === 0 ? certificatesData.length - 1 : prevIndex - 1
-    );
+    ));
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
+    setCurrentIndex((prevIndex) => (
       prevIndex === certificatesData.length - 1 ? 0 : prevIndex + 1
-    );
+    ));
   };
 
   return (
@@ -63,12 +62,14 @@ const Certificates = () => {
 
         {/* Navigation Buttons */}
         <button
+          type="button"
           onClick={handlePrev}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-yellow-600 transition"
         >
           &#8592;
         </button>
         <button
+          type="button"
           onClick={handleNext}
           className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-yellow-600 transition"
         >
