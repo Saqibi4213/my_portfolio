@@ -10,17 +10,16 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 ${
-        menuOpen ? "bg-yellow-800" : 'bg-black bg-opacity-80 backdrop-blur-md'
+        menuOpen ? 'bg-yellow-800' : 'bg-black bg-opacity-80 backdrop-blur-md'
       } transition duration-300 shadow-lg`}
     >
-      <div className='container mx-auto px-6 py-4 flex justify-between items-center'>
-        {/* Logo with glowing effect and star icon with shine effect */}
+      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+        {/* Logo with glowing effect and star icon */}
         <a
-          href='#home'
-          className='text-4xl font-extrabold text-yellow-500 hover:text-yellow-400 transition duration-500 transform hover:scale-125 font-lora text-shadow-lg'
+          href="#home"
+          className="text-4xl font-extrabold text-yellow-500 hover:text-yellow-400 transition duration-500 transform hover:scale-125 font-lora text-shadow-lg"
         >
-          <FaStar className='inline-block text-yellow-500 text-3xl mr-2 logo-shine' />
-          {''}
+          <FaStar className="inline-block text-yellow-500 text-3xl mr-2 logo-shine" />
           Mehr
         </a>
 
