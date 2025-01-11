@@ -9,28 +9,31 @@ import Footer from './components/Footer';
 import 'animate.css';
 import './index.css';
 
-const App = () => (
-  <>
-    <Header />
-    <main className="pt-20">
-      <section id="home">
-        <Home />
-      </section>
-      <section id="projects">
-        <Projects />
-      </section>
-      <section id="skills">
-        <Skills />
-      </section>
-      <section id="certificates">
-        <Certificates />
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
-      <Footer />
-    </main>
-  </>
-);
+// Function declaration for the component
+function App() {
+  return (
+    <>
+      <Header />
+      <main className="pt-20">
+        <section id="home">
+          <Home />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="certificates">
+          <Certificates />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+        <Footer />
+      </main>
+    </>
+  );
+}
 
 export default App;

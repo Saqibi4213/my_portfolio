@@ -23,7 +23,7 @@ const certificatesData = [
   },
 ];
 
-const Certificates = () => {
+function Certificates() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
@@ -78,6 +78,6 @@ const Certificates = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Certificates;

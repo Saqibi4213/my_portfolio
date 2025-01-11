@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes, FaStar } from 'react-icons/fa';
 
-const Header = () => {
+function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -126,6 +126,6 @@ const Header = () => {
       )}
     </header>
   );
-};
+}
 
 export default Header;

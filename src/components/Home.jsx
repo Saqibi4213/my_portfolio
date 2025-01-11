@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import { AiOutlineDownload } from 'react-icons/ai';
 
-const Home = () => {
+function Home() {
   useEffect(() => {
     const pointerCircle = document.createElement('div');
     pointerCircle.classList.add('pointer-circle');
@@ -88,6 +88,6 @@ const Home = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Home;
