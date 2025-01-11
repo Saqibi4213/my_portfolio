@@ -19,6 +19,7 @@ const projects = [
     name: 'Skin Care Website',
     description: 'A skin care website showcasing my work and skills.',
     image: '/images/skin-care.png',
+    /* eslint-disable react/no-array-index-key */
     technologies: [<FaHtml5 />, <FaCss3Alt />],
   },
   {
@@ -26,6 +27,7 @@ const projects = [
     name: 'Pokemon',
     description: 'A website named Pokemon showcasing all Pokemon characters.',
     image: '/images/pokemn.png',
+    /* eslint-disable react/no-array-index-key */
     technologies: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
   },
   {
@@ -33,6 +35,7 @@ const projects = [
     name: 'Travels Space',
     description: 'A project using React JS for a travels space app.',
     image: '/images/travels.png.png',
+    /* eslint-disable react/no-array-index-key */
     technologies: [<FaReact />, <FaJs />],
   },
   {
@@ -40,6 +43,7 @@ const projects = [
     name: 'Cash Register',
     description: 'A cash register app helping to return change to customers.',
     image: '/images/C1.png',
+    /* eslint-disable react/no-array-index-key */
     technologies: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
   },
   {
@@ -47,6 +51,7 @@ const projects = [
     name: 'Next.js Advanced App',
     description: 'A Next.js app showcasing advanced skills and practices.',
     image: '/images/nextjs.png.png',
+    /* eslint-disable react/no-array-index-key */
     technologies: [<FaReact />, <FaJs />],
   },
 ];
