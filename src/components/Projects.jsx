@@ -1,5 +1,10 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact } from 'react-icons/fa';
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+} from 'react-icons/fa';
 
 const projects = [
   {
@@ -65,9 +70,9 @@ const Projects = () => (
               <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
               <p className="text-sm mb-4">{project.description}</p>
               <div className="flex space-x-2">
-                {project.technologies.map((icon) => (
+                {project.technologies.map((icon, index) => (
                   <span
-                    key={`${project.id}-${icon.type.displayName}`} // Using unique key
+                    key={`${project.id}-${index}`} // Unique key for each technology
                     className="text-lg text-yellow-500"
                     title="Technology used"
                   >
