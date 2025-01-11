@@ -12,7 +12,6 @@ const projects = [
     name: 'Phone Validator',
     description: 'A responsive phone validator showcasing my work and skills.',
     image: '/images/phone-validator.png',
-    /* eslint-disable react/jsx-key */
     technologies: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
   },
   {
@@ -20,21 +19,18 @@ const projects = [
     name: 'Skin Care Website',
     description: 'A skin care website showcasing my work and skills.',
     image: '/images/skin-care.png',
-    /* eslint-disable react/jsx-key */
     technologies: [<FaHtml5 />, <FaCss3Alt />],
   },
   {
     id: 3,
     name: 'Pokemon',
     description: 'A website named Pokemon showcasing all Pokemon characters.',
-    /* eslint-disable react/jsx-key */
-    image: '/images/pokemon.png',
+    image: '/images/pokemn.png',
     technologies: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
   },
   {
     id: 4,
     name: 'Travels Space',
-    /* eslint-disable react/jsx-key */
     description: 'A project using React JS for a travels space app.',
     image: '/images/travels.png.png',
     technologies: [<FaReact />, <FaJs />],
@@ -42,7 +38,6 @@ const projects = [
   {
     id: 5,
     name: 'Cash Register',
-    /* eslint-disable react/jsx-key */
     description: 'A cash register app helping to return change to customers.',
     image: '/images/C1.png',
     technologies: [<FaHtml5 />, <FaCss3Alt />, <FaJs />],
@@ -50,7 +45,6 @@ const projects = [
   {
     id: 6,
     name: 'Next.js Advanced App',
-    /* eslint-disable react/jsx-key */
     description: 'A Next.js app showcasing advanced skills and practices.',
     image: '/images/nextjs.png.png',
     technologies: [<FaReact />, <FaJs />],
@@ -76,10 +70,10 @@ const Projects = () => (
               <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
               <p className="text-sm mb-4">{project.description}</p>
               <div className="flex space-x-2">
-              /* eslint-disable react/jsx-key */
-                {project.technologies.map((icon, index) => (
+                {/* Using technology icons */}
+                {project.technologies.map((icon) => (
                   <span
-                    key={`${project.id}-${index}`} // Unique key for each technology
+                    key={project.id + icon.type.displayName} // Unique key for each technology icon
                     className="text-lg text-yellow-500"
                     title="Technology used"
                   >
