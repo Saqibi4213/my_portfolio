@@ -40,7 +40,7 @@ const skills = [
     description: 'Programming language for dynamic content',
   },
   {
-    name: 'React',
+    name: 'React"',
     icon: <FaReact />,
     bg: 'bg-blue-400',
     description: 'JavaScript library for building UI',
@@ -113,16 +113,15 @@ const skills = [
   },
 ];
 
-// Skills component
 const Skills = () => (
-  <section id='skills' className='py-20 bg-gray-900 text-white'>
-    <div className='container mx-auto px-4'>
-      <h2 className='text-3xl font-bold text-center mb-8 animate__animated animate__fadeIn animate__delay-1s'>
+  <section id="skills" className="py-20 bg-gray-900 text-white">
+    <div className="container mx-auto px-4">
+      <h2 className="text-3xl font-bold text-center mb-8 animate__animated animate__fadeIn animate__delay-1s">
         My Skills
       </h2>
 
       {/* Responsive Grid */}
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {skills.map((skill) => (
           <div
             key={skill.name}
@@ -131,20 +130,18 @@ const Skills = () => (
             )}`} hover:to-blue-500`}
           >
             {/* Icon */}
-            <div className='text-5xl mb-4 transition-transform duration-300 ease-in-out hover:scale-125'>
+            <div className="text-5xl mb-4 transition-transform duration-300 ease-in-out hover:scale-125">
               {skill.icon}
             </div>
 
             {/* Skill Name */}
-            <p className='text-lg font-semibold mb-2'>{skill.name}</p>
+            <p className="text-lg font-semibold mb-2">{skill.name}</p>
 
             {/* Skill Description */}
-            <p className='text-sm font-medium text-center'>
-              {skill.description}
-            </p>
+            <p className="text-sm font-medium text-center">{skill.description}</p>
 
             {/* Junior Label */}
-            <span className='mt-3 bg-yellow-400 text-gray-900 px-3 py-1 text-xs rounded-full font-bold'>
+            <span className="mt-3 bg-yellow-400 text-gray-900 px-3 py-1 text-xs rounded-full font-bold">
               Junior
             </span>
           </div>

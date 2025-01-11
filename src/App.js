@@ -12,20 +12,20 @@ import './index.css';
 const App = () => (
   <>
     <Header />
-    <main className='pt-20'>
-      <section id='home'>
+    <main className="pt-20">
+      <section id="home">
         <Home />
       </section>
-      <section id='projects'>
+      <section id="projects">
         <Projects />
       </section>
-      <section id='skills'>
+      <section id="skills">
         <Skills />
       </section>
-      <section id='certificates'>
+      <section id="certificates">
         <Certificates />
       </section>
-      <section id='contact'>
+      <section id="contact">
         <Contact />
       </section>
       <Footer />
